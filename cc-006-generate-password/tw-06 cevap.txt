@@ -1,0 +1,10 @@
+import random
+random_number=random.randint(1000,9999)
+b=""
+a=input("Enter your fullname:")
+if len(a) < 3:
+  print("Dize en az 3 karakter içermeli")
+else:
+  for i in random.sample(a,3):
+    b+=i
+print(b+str(random_number))

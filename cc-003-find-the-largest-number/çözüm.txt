@@ -1,0 +1,10 @@
+a=input("Enter 5 numbers").split()
+liste=[]
+
+for i in a:
+  liste.append(int(i))
+max_number=liste[0]
+for x  in liste:
+  if x > max_number:
+    max_number=x
+print(max_number)
